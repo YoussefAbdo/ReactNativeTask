@@ -32,11 +32,9 @@ react-native run-android
     ```
 2. Add the local module to dependencies in **package.json**: 
 
-    ```json
   "dependencies": {
     "react-native-instacapture-library": "file:../InstacaptureLibrary"
     },
-    ```
     
 3. Link dependencies:
 
