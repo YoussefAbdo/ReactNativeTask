@@ -36,8 +36,8 @@ react-native run-android
 ### Mostly automatic installation
 
 `$ react-native link react-native-instacapture-library`
-    ```
-4. Use the module in **index.android.js**:
+
+4. Use the module:
 
     ```javascript
     import RNInstacaptureLibrary from 'react-native-instacapture-library';
