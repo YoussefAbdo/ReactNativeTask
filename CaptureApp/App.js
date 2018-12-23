@@ -40,8 +40,8 @@ async function requestStoragePermission() {
 }
 
 const onButtonPress = () => {
-  RNInstacaptureLibrary.capture();
   requestStoragePermission();
+  RNInstacaptureLibrary.capture();
 };
 
 export default class App extends Component<Props> {
