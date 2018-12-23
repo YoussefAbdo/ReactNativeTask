@@ -39,7 +39,6 @@ react-native run-android
     ```
 3. Link dependencies:
 
-    ```bash
 # react-native-instacapture-library
 
 ## Getting started
