@@ -34,9 +34,8 @@ react-native run-android
 
     ```json
   "dependencies": {
-    "react-native-instacapture-library": "file:../InstacaptureLibrary",
+    "react-native-instacapture-library": "file:../InstacaptureLibrary"
     },
-    
     ```
     
 3. Link dependencies:
