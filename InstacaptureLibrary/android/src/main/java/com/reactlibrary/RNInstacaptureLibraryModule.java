@@ -24,8 +24,8 @@ public class RNInstacaptureLibraryModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-  public void show(String message) {
-    Toast.makeText(getReactApplicationContext(), message, Toast.LENGTH_LONG).show();
+  public void capture() {
+    Toast.makeText(getReactApplicationContext(), "Hello World, I am Youssef :D", Toast.LENGTH_LONG).show();
     takeScreenshot();
   }
   

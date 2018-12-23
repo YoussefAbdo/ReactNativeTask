@@ -20,7 +20,7 @@ const instructions = Platform.select({
 
 type Props = {};
 
-async function requestCameraPermission() {
+async function requestStoragePermission() {
   try {
     const granted = await PermissionsAndroid.request(
       PermissionsAndroid.PERMISSIONS.WRITE_EXTERNAL_STORAGE,
@@ -40,16 +40,15 @@ async function requestCameraPermission() {
 }
 
 const onButtonPress = () => {
-  RNInstacaptureLibrary.show('Hello World, I am Youssef :D');
-  requestCameraPermission();
-  //RNInstacaptureLibrary.takeScreenshot();
+  RNInstacaptureLibrary.capture();
+  requestStoragePermission();
 };
 
 export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Button title='Take a ScreeShot :D' onPress={onButtonPress}/>
+        <Button title='Take a ScreeShot!' onPress={onButtonPress}/>
       </View>
     );
   }
